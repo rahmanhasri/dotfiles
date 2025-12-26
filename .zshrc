@@ -95,15 +95,10 @@ fi
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
 # the $ZSH_CUSTOM folder, with .zsh extension. Examples:
-$ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-
-alias lifepal="cd ~/Documents/projects/lifepal"
 
 fetchbranch() {
     git branch -D $1 || true
@@ -124,12 +119,9 @@ if command -v pyenv-virtualenv-init >/dev/null; then
 fi
 
 export PATH="/Users/mamanmac/.local/bin:$PATH"
-alias gpoh="git push origin HEAD"
 
 # Added by Windsurf
 export PATH="/Users/mamanmac/.codeium/windsurf/bin:$PATH"
-
-alias ws="/usr/local/bin/windsurf"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -145,6 +137,3 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 . "$HOME/.cargo/env"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
-alias ghosconf="vim ~/Library/Application\ Support/com.mitchellh.ghostty/config"
-
