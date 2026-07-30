@@ -26,3 +26,6 @@ split_vertical = "prefix+%"
 split_horizontal = 'prefix+"'
 # tmux: bind c new-window
 new_tab = "prefix+c"
+
+# toggle side panel
+toggle_sidebar = "prefix+p"
