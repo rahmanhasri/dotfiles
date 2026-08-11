@@ -11,7 +11,7 @@ name = "catppuccin"
 
 [keys]
 prefix = "ctrl+s"
-zoom_pane = "prefix+z"
+# zoom_pane = "prefix+z"
 
 # tmux: christoomey/vim-tmux-navigator — move between panes with ctrl+h/j/k/l,
 # no prefix needed. (tmux also had prefix h/j/k/l via bind-key select-pane.)
@@ -26,6 +26,10 @@ split_vertical = "prefix+%"
 split_horizontal = 'prefix+"'
 # tmux: bind c new-window
 new_tab = "prefix+c"
-
 # toggle side panel
 toggle_sidebar = "prefix+p"
+
+[keys.indexed]
+# tabs = ""       # e.g. "ctrl" makes ctrl+1..9 switch tabs directly
+# workspaces = "" # e.g. "ctrl+shift" makes ctrl+shift+1..9 switch workspaces directly
+agents = "ctrl+shift"     # e.g. "alt" makes alt+1..9 focus agent rows directly
